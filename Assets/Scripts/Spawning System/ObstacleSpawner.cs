@@ -19,13 +19,13 @@ public class ObstacleSpawner : MonoBehaviour
     private void Start()
     {
         baseSpawnDistance = spawnDistance;
-        StartSpawn();
-        InvokeRepeating("DecreaseSpawnDistance", decreaseSpawnDelay, decreaseSpawnDelay);        
+        StartSpawn();   
     }
 
     private void DecreaseSpawnDistance()
     {
         spawnDistance = spawnDistance - (baseSpawnDistance * decreaseSpawnDistancePercent / 100);
+        Debug.Log((baseSpawnDistance * decreaseSpawnDistancePercent / 100));
     }
 
     private void SpawnObstacle()

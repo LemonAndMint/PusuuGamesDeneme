@@ -1,18 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private float deactiveTimeDelay;
+    private void Start()
     {
-        
+        Invoke("Deactive", 5f);
     }
 
-    // Update is called once per frame
-    void Update()
+    void Deactive()
     {
-        
+        Destroy(gameObject);
     }
 }
