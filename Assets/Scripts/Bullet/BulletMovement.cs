@@ -55,6 +55,5 @@ public class BulletMovement : MonoBehaviour
         }
 
         rb.MoveRotation( Quaternion.Lerp(Quaternion.identity, rb.rotation, 0.993f) );
-
     }
 }
