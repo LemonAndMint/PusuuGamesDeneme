@@ -5,8 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Dedection : MonoBehaviour
 {
-    public string scenename;
-    public float scenerestartsecond = 5;
+    public float sceneRestartSecond = 5;
+
+    public AudioClip[] audios;
+    public AudioSource source;
+
+    private void Start()
+    {
+        source = GetComponent<AudioSource>();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -14,6 +21,7 @@ public class Dedection : MonoBehaviour
         {
             GetComponent<MeshFilter>().mesh = null;
             gameObject.transform.GetChild(0).GetComponent<ParticleSystem>().Play();
+            source.PlayOneShot(audios[Random.Range(0, audios.Length)]);
             StartCoroutine(timar());
         }
     }
@@ -21,7 +29,7 @@ public class Dedection : MonoBehaviour
 
     IEnumerator timar()
     {
-        yield return new WaitForSeconds(scenerestartsecond);
-        SceneManager.LoadScene(scenename);
+        yield return new WaitForSeconds(sceneRestartSecond);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
