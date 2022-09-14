@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10188,7 +10188,7 @@ MonoBehaviour:
   spawnDelay: 1.5
   decreaseSpawnDelay: 0.1
   decreaseSpawnDistancePercent: 50
-  obsPrefab: {fileID: 4631572890556606327, guid: ff875bc97dce9844f8c17c048e3da0a1, type: 3}
+  obsPrefab: {fileID: 7711469841991575580, guid: 3320bcc71e5f8e54da12a0875a96440c, type: 3}
   baseSpawnPos: {x: 0, y: 0, z: 0}
   spawnDistance: 25
   minSpawnDistance: 15
