@@ -153,11 +153,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 1
-  decreaseSpawnDelay: 1
-  decreaseSpawnDistancePercent: 5
+  decreaseSpawnDelay: 0.1
+  decreaseSpawnDistancePercent: 10
   obsPrefab: {fileID: 4631572890556606327, guid: ff875bc97dce9844f8c17c048e3da0a1, type: 3}
   baseSpawnPos: {x: 0, y: 0, z: 0}
   spawnDistance: 25
+  minSpawnDistance: 15
   player: {fileID: 916710346}
 --- !u!4 &324670110
 Transform:
