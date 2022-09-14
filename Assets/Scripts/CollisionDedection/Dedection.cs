@@ -6,12 +6,14 @@ using UnityEngine.SceneManagement;
 public class Dedection : MonoBehaviour
 {
     public string scenename;
-    public float scenerestartsecond = 5; 
+    public float scenerestartsecond = 5;
 
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Barrier")
         {
+            GetComponent<MeshFilter>().mesh = null;
+            gameObject.transform.GetChild(0).GetComponent<ParticleSystem>().Play();
             StartCoroutine(timar());
         }
     }
