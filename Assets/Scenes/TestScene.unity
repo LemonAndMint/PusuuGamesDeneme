@@ -921,7 +921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1226847912}
-  moveSpeed: 1
+  moveSpeed: 50
   rotateSpeed: 50
   maxXRotate: 0
   maxYRotate: 0
