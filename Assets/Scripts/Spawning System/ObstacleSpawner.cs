@@ -9,6 +9,7 @@ public class ObstacleSpawner : MonoBehaviour
     [SerializeField] private Transform obsPrefab;
     [SerializeField] private Vector3 baseSpawnPos;
     [SerializeField] private float spawnDistance;
+    [SerializeField] private float minSpawnDistance;
     private float baseSpawnDistance;
     [SerializeField] private Transform player;
     private void Awake()
@@ -24,8 +25,11 @@ public class ObstacleSpawner : MonoBehaviour
 
     private void DecreaseSpawnDistance()
     {
-        spawnDistance = spawnDistance - (baseSpawnDistance * decreaseSpawnDistancePercent / 100);
-        Debug.Log((baseSpawnDistance * decreaseSpawnDistancePercent / 100));
+        float temp = spawnDistance - (baseSpawnDistance * decreaseSpawnDistancePercent / 100);
+        if (temp < minSpawnDistance)
+            spawnDistance = minSpawnDistance;
+        else
+            spawnDistance = temp;
     }
 
     private void SpawnObstacle()
