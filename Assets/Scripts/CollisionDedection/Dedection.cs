@@ -9,6 +9,7 @@ public class Dedection : MonoBehaviour
 
     public AudioClip[] audios;
     public AudioSource source;
+    public GameObject gfx;
 
     private void Start()
     {
@@ -19,9 +20,12 @@ public class Dedection : MonoBehaviour
     {
         if (other.gameObject.tag == "Barrier")
         {
-            GetComponent<MeshFilter>().mesh = null;
+            //GetComponent<MeshFilter>().mesh = null;
+            gfx.SetActive(false);
+            
             gameObject.transform.GetChild(0).GetComponent<ParticleSystem>().Play();
             source.PlayOneShot(audios[Random.Range(0, audios.Length)]);
+
             StartCoroutine(timar());
         }
     }
