@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -200,8 +200,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103827847}
-  m_LocalRotation: {x: 0.23471528, y: 0, z: 0, w: 0.9720642}
-  m_LocalPosition: {x: 0, y: 3, z: -5}
+  m_LocalRotation: {x: 0.13100377, y: 1e-45, z: 0, w: 0.9913819}
+  m_LocalPosition: {x: 0, y: 1.456, z: -4.563}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -418,8 +418,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 264542255}
-  m_LocalRotation: {x: 0.23471528, y: 0, z: 0, w: 0.9720642}
-  m_LocalPosition: {x: 0, y: 3, z: -5}
+  m_LocalRotation: {x: 0.13100377, y: 1e-45, z: -0, w: 0.9913819}
+  m_LocalPosition: {x: 0, y: 1.456, z: -4.563}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -568,7 +568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 1
-  m_FollowOffset: {x: 0, y: 3, z: -5}
+  m_FollowOffset: {x: 0, y: 1.456, z: -4.563}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -10386,7 +10386,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f04066a55d85cd44db333a141c9a6a29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spawnDelay: 1.5
+  spawnDelay: 2
   decreaseSpawnDelay: 0.1
   decreaseSpawnDistancePercent: 50
   obsPrefab: {fileID: 7711469841991575580, guid: 3320bcc71e5f8e54da12a0875a96440c, type: 3}
@@ -10443,7 +10443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5b38e3b7bab4af41b8caa8bf60d8ea6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneRestartSecond: 5
+  sceneRestartSecond: 1
   audios:
   - {fileID: 8300000, guid: 3f9cf884eebe9cf4598b4b3ffea65fc7, type: 3}
   - {fileID: 8300000, guid: 77b12be6b9a2647429fe2e8ed0dfc51b, type: 3}
@@ -10451,6 +10451,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3680518895b8c8c4180a2682f1cf2130, type: 3}
   source: {fileID: 0}
   gfx: {fileID: 7674318963790930276}
+  timescale: 1
+  openCover: 0
 --- !u!65 &1450702299
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10601,7 +10603,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450702297}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3094831c05b30d747bac5b7af5a9c8a5, type: 3}
   m_Name: 
@@ -10614,7 +10616,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450702297}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c39211338fb5a243916082bfcd129f4, type: 3}
   m_Name: 
